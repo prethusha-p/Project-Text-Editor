@@ -250,17 +250,6 @@ void editor_move_cursor(char dir){
     }   
 }
 
-void editor_display(){
-    Node * curr = head;
-    while(curr!=tail){
-        if(curr!=head){
-            printf("%s\n",curr->line);
-        }
-        curr = curr->next;
-    }
-    return;
-}
-
 int editor_num_lines(){
     return numLines();
 }

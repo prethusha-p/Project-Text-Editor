@@ -27,7 +27,6 @@ void editor_insert(char * line);
 void editor_delete();
 void editor_undo();
 void editor_redo();
-void editor_display();
 int editor_num_lines();
 Linematches* editor_search_highlight();
 void editor_saveToFile();
