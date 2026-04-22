@@ -1,3 +1,7 @@
-.editor.c.swp
-*.swp
 *.o
+*.a
+*.so
+# Also ignore your final executable (replace 'editor' with your actual program name)
+editor
+# Ignore those annoying swap files
+*.swp
