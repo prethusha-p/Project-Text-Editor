@@ -11,7 +11,7 @@ The editor uses a dual-mode system to prevent accidental text entry during navig
 | `i` | **Enter Insert Mode** (Start typing) |
 | `d` | **Delete** the currently selected line |
 | `s` | **Save** the current buffer to a file |
-| `l` | **Load** an existing file into the editor |
+| `l` | **Load** an existing file into the empty editor |
 | `h` | **Search & Highlight** specific text |
 | `↑ / ↓` | Navigate through lines |
 | `q` | **Quit** the application |
