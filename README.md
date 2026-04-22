@@ -58,8 +58,13 @@ make clean
 * Efficient Redrawing: Utilizes wnoutrefresh() and doupdate() to minimize terminal flicker and improve performance on native Linux environments.
 * Terminal Restoration: Robust handling of endwin() to ensure the user's terminal environment is perfectly restored upon exiting the program.
 
-## NOTE:
+---
 
-Currently, moving cursor up and down works only after using ESC and exitting out of the other modes
+## 📝 Usage Notes
+> [!IMPORTANT]
+> **Mode Switching & Navigation:**
+> * **Cursor Navigation:** Moving the cursor up and down (`↑` / `↓`) is only enabled in **Command Mode**. You must press **`ESC`** to exit Insert Mode (or any other active function) before you can navigate between lines.
+> * **Active Buffer Constraints:** While a line is active in Insert Mode, the only special characters explicitly handled are **Backspace** (for deletion) and **Escape** (to exit). 
+> * **Input Handling:** Other control sequences or non-alphanumeric keys may not render correctly while the buffer is active.
 
-### Developed by P Prethusha
+#### Developed by P Prethusha
