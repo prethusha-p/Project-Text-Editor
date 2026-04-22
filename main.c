@@ -148,6 +148,19 @@ int main(){
         doupdate();
                 c = getch();
                 if(c==27){
+					clear();
+        display(head,tail,nav_cursor);
+		wattron(ui_win,A_REVERSE);
+    mvwprintw(ui_win,0,0,"Menu:  i:insert | ESC:back to menu || d:delete || h:search & highlight || s:save || l:load || KEY_UP move cursor up ||KEY_DOWN: move cursor down|| q:quit \n");
+    wattroff(ui_win,A_REVERSE);
+
+    wattron(ui_win,A_REVERSE); // Invert colors for the status bar
+    mvwprintw(ui_win,1, 0, " File: %s", file);
+    wattroff(ui_win,A_REVERSE);
+	
+    
+        refresh();
+		wrefresh(ui_win);
                     break; //ESC to break out of the input mode
                 }
                 else if(c=='\n'){
