@@ -64,6 +64,7 @@ make clean
 > [!IMPORTANT]
 > **Mode Switching & Navigation:**
 > * **Cursor Navigation:** Moving the cursor up and down (`↑` / `↓`) is only enabled in **Command Mode**. You must press **`ESC`** to exit Insert Mode (or any other active function) before you can navigate between lines.
+> * **Display Limit:** The editor currently supports a view of up to **38 lines**. Vertical scrolling for files exceeding this limit is not yet implemented.
 > * **Active Buffer Constraints:** While a line is active in Insert Mode, the only special characters explicitly handled are **Backspace** (for deletion) and **Escape** (to exit). 
 > * **Input Handling:** Other control sequences or non-alphanumeric keys may not render correctly while the buffer is active.
 
