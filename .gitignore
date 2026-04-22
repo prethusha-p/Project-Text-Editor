@@ -1,7 +1,7 @@
 *.o
 *.a
 *.so
-# Also ignore your final executable (replace 'editor' with your actual program name)
+# Also ignoring final executable
 editor
 # Ignore those annoying swap files
 *.swp
